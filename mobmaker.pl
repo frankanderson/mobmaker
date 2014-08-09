@@ -4,7 +4,7 @@
 # Copyright 2003
 # This script may not be copied, changed, or distributed without
 # my written consent.
-# Please send bug reports and questions to frank@cyberthreat.net 
+# Please send bug reports and questions to frank@tank.bz 
 
 print "Content-type:text/html\n\n";
 
