@@ -1,0 +1,3460 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>MobMaker by leagle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+ 
+<form name="mainform" method="post" action="/cgi-bin/mobmaker">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td width="125">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Mob Number</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="mobnumber" type="text" id="mobnumber" size="8"> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Keywords</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="mobkeywords" type="text" id="mobkeywords" size="72"> 
+        <font size="-1">puff dragon</font></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Short Desc/Name</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="shortname" type="text" id="shortname" size="72"> 
+        <font size="-1">Puff </font></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Long Desc</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="shortdesc" type="text" id="shortdesc" size="72"> 
+        <font size="-1">Puff is here, contemplating reality.</font></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Full Desc</td>
+      <td width="576" valign="top" bgcolor="#6699FF"> <textarea name="longdesc" cols="70" rows="8" id="longdesc"></textarea> 
+      </td>
+      <td width="299" valign="middle" bgcolor="#6699FF"> <font size="-1">Puff 
+        looks at you pondering however you ended up here and got a chance to look 
+        at her.</font></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">&nbsp;</td>
+      <td colspan="2" bgcolor="#6699FF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Lore Description</td>
+      <td valign="middle" bgcolor="#6699FF"> <textarea name="lore" cols="70" rows="4" id="lore"></textarea></td>
+      <td valign="middle" bgcolor="#6699FF"><font size="-1">Puff is really a special 
+        mob, the first of her kind.</font></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Level</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="moblevel" type="text" id="moblevel" size="5"> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Alignment</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="alignment" id="alignment">
+          <option value="1000">Totally Good</option>
+          <option value="750">Mostly Good</option>
+          <option value="300">Neutral/Good</option>
+          <option value="1" selected>Neutral</option>
+          <option value="-300">Neutral/Evil</option>
+          <option value="-750">Mostly Evil</option>
+          <option value="-1000">Totally Evil</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Armor</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="armor" type="text" id="armor" size="5"> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Race</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="race" id="race">
+          <option>angel</option>
+          <option>animal</option>
+          <option>avian</option>
+          <option>azure drake</option>
+          <option>bear</option>
+          <option>cat</option>
+          <option>chaos wyrm</option>
+          <option>crimson wyrm</option>
+          <option>crystal drake</option>
+          <option>demon</option>
+          <option>displacer</option>
+          <option>beast</option>
+          <option>dragon</option>
+          <option>dwarf</option>
+          <option>eagle</option>
+          <option>earth</option>
+          <option>elemental</option>
+          <option>elephant</option>
+          <option>elf</option>
+          <option>fire elemental</option>
+          <option>fish</option>
+          <option>giant</option>
+          <option>god</option>
+          <option>gold dragon</option>
+          <option>golem</option>
+          <option>granite drake</option>
+          <option>halfling</option>
+          <option>human</option>
+          <option>humanoid</option>
+          <option>hydra</option>
+          <option>insect</option>
+          <option>lemyrian</option>
+          <option>lich</option>
+          <option>mandrake</option>
+          <option>mist dragon</option>
+          <option>octopus</option>
+          <option>orc</option>
+          <option>owl</option>
+          <option>pearl dragon</option>
+          <option>phoenix</option>
+          <option>pig</option>
+          <option>pixie</option>
+          <option>razor wyrm</option>
+          <option>reptile</option>
+          <option>shadow wyrm</option>
+          <option>shark</option>
+          <option>snake</option>
+          <option>silver dragon</option>
+          <option>smurf</option>
+          <option>thunder drake</option>
+          <option>tiger</option>
+          <option>troll</option>
+          <option>undead</option>
+          <option>undefined</option>
+          <option>vampire</option>
+          <option>water elemental</option>
+          <option>wolf</option>
+          <option>wolverine</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">HP</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="hp1" type="text" id="hp1" size="3">
+        d 
+        <input name="hp2" type="text" id="hp2" size="4">
+        + 
+        <input name="hp3" type="text" id="hp3" value="0" size="10"> <input name="hp4" type="text" id="hp4" size="3"> 
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Mana</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="mana1" type="text" id="mana1" size="3">
+        d 
+        <input name="mana2" type="text" id="mana2" size="4">
+        + 
+        <input name="mana3" type="text" id="mana3" value="0" size="10"> <input name="mana4" type="text" id="mana4" size="3"> 
+        <font size="-1">Optional. Only needed for spell-casting mobs. Example: 
+        10 d 100 + 500 5. Last digit is mana regeneration % per tick.</font> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Gold</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="gold1" type="text" id="gold1" size="3">
+        d 
+        <input name="gold2" type="text" id="gold2" size="4">
+        + 
+        <input name="gold3" type="text" id="gold3" value="0" size="10"> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Gender</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="sex" id="sex">
+          <option>male</option>
+          <option>female</option>
+          <option>neutral</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Exp Modifier</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="expmod" type="text" id="expmod" size="4"> 
+        <font size="-1">Optional. Equals the percent of normal exp given. For 
+        example, 90 will give the mob 10% less exp than standard. If used, must 
+        be less than 100.</font></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Starting Position</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="startposition" id="startposition">
+          <option>standing</option>
+          <option>dead</option>
+          <option>dying</option>
+          <option>fighting</option>
+          <option>flying</option>
+          <option>incapacitated</option>
+          <option>resting</option>
+          <option>sleeping</option>
+          <option>sitting</option>
+          <option>stunned</option>
+          <option>swimming</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Default Position</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="defposition" id="defposition">
+          <option>standing</option>
+          <option>dead</option>
+          <option>dying</option>
+          <option>fighting</option>
+          <option>flying</option>
+          <option>incapacitated</option>
+          <option>resting</option>
+          <option>sleeping</option>
+          <option>sitting</option>
+          <option>stunned</option>
+          <option>swimming</option>
+        </select> <font size="-1">Position seen in long description of the mob.</font></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 1</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att1percent" id="att1percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att1type" id="att1type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att1tar" id="att1tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att1thaco" id="att1thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att1dice" type="text" id="att1dice" size="3">
+        d 
+        <input name="att1diceside" type="text" id="att1diceside" size="5">
+        + 
+        <input name="att1diceplus" type="text" id="att1diceplus" value="0" size="10"> 
+        <select name="att1damtype" id="att1damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 2</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att2percent" id="att2percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att2type" id="att2type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att2tar" id="att2tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att2thaco" id="att2thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att2dice" type="text" id="att2dice" size="3">
+        d 
+        <input name="att2diceside" type="text" id="att2diceside" size="5">
+        + 
+        <input name="att2diceplus" type="text" id="att2diceplus" value="0" size="10"> 
+        <select name="att2damtype" id="att2damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 3</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att3percent" id="att3percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att3type" id="att3type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att3tar" id="att3tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att3thaco" id="att3thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att3dice" type="text" id="att3dice" size="3">
+        d 
+        <input name="att3diceside" type="text" id="att3diceside" size="5">
+        + 
+        <input name="att3diceplus" type="text" id="att3diceplus" value="0" size="10"> 
+        <select name="att3damtype" id="att3damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 4</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att4percent" id="att4percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att4type" id="att4type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att4tar" id="att4tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att4thaco" id="att4thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att4dice" type="text" id="att4dice" size="3">
+        d 
+        <input name="att4diceside" type="text" id="att4diceside" size="5">
+        + 
+        <input name="att4diceplus" type="text" id="att4diceplus" value="0" size="10"> 
+        <select name="att4damtype" id="att4damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 5</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att5percent" id="att5percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att5type" id="att5type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att5tar" id="att5tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att5thaco" id="att5thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att5dice" type="text" id="att5dice" size="3">
+        d 
+        <input name="att5diceside" type="text" id="att5diceside" size="5">
+        + 
+        <input name="att5diceplus" type="text" id="att5diceplus" value="0" size="10"> 
+        <select name="att5damtype" id="att5damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 6</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att6percent" id="att6percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att6type" id="att6type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att6tar" id="att6tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att6thaco" id="att6thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att6dice" type="text" id="att6dice" size="3">
+        d 
+        <input name="att6diceside" type="text" id="att6diceside" size="5">
+        + 
+        <input name="att6diceplus" type="text" id="att6diceplus" value="0" size="10"> 
+        <select name="att6damtype" id="att6damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 7</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att7percent" id="att7percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att7type" id="att7type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att7tar" id="att7tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att7thaco" id="att7thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att7dice" type="text" id="att7dice" size="3">
+        d 
+        <input name="att7diceside" type="text" id="att7diceside" size="5">
+        + 
+        <input name="att7diceplus" type="text" id="att7diceplus" value="0" size="10"> 
+        <select name="att7damtype" id="att7damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 8</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att8percent" id="att8percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att8type" id="att8type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att8tar" id="att8tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att8thaco" id="att8thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att8dice" type="text" id="att8dice" size="3">
+        d 
+        <input name="att8diceside" type="text" id="att8diceside" size="5">
+        + 
+        <input name="att8diceplus" type="text" id="att8diceplus" value="0" size="10"> 
+        <select name="att8damtype" id="att8damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 9</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att9percent" id="att9percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att9type" id="att9type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att9tar" id="att9tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att9thaco" id="att9thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att9dice" type="text" id="att9dice" size="3">
+        d 
+        <input name="att9diceside" type="text" id="att9diceside" size="5">
+        + 
+        <input name="att9diceplus" type="text" id="att9diceplus" value="0" size="10"> 
+        <select name="att9damtype" id="att9damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Attack 10</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="att10percent" id="att10percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <select name="att10type" id="att10type">
+          <option value="bite">bite</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="breath">breath</option>
+          <option value="claw">claw</option>
+          <option value="crush">crush</option>
+          <option value="envenom">envenom</option>
+          <option value="hit">hit</option>
+          <option value="kick">kick</option>
+          <option value="missile">missile</option>
+          <option value="pierce">pierce</option>
+          <option value="punch">punch</option>
+          <option value="slash">slash</option>
+          <option value="special">special</option>
+          <option value="specproc">specproc</option>
+          <option value="sting">sting</option>
+          <option value="trample">trample</option>
+          <option value="whip">whip</option>
+        </select> <select name="att10tar" id="att10tar">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> <select name="att10thaco" id="att10thaco">
+          <option value="20">20</option>
+          <option value="19">19</option>
+          <option value="18">18</option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+          <option value="0">0</option>
+          <option value="-1">-1</option>
+          <option value="-2">-2</option>
+          <option value="-3">-3</option>
+          <option value="-4">-4</option>
+          <option value="-5">-5</option>
+          <option value="-6">-6</option>
+          <option value="-7">-7</option>
+          <option value="-8">-8</option>
+          <option value="-9">-9</option>
+          <option value="-10">-10</option>
+          <option value="-11">-11</option>
+          <option value="-12">-12</option>
+          <option value="-13">-13</option>
+          <option value="-14">-14</option>
+          <option value="-15">-15</option>
+          <option value="-16">-16</option>
+          <option value="-17">-17</option>
+          <option value="-18">-18</option>
+          <option value="-19">-19</option>
+          <option value="-20">-20</option>
+        </select> <input name="att10dice" type="text" id="att10dice" size="3">
+        d 
+        <input name="att10diceside" type="text" id="att10diceside" size="5">
+        + 
+        <input name="att10diceplus" type="text" id="att10diceplus" value="0" size="10"> 
+        <select name="att10damtype" id="att10damtype">
+          <option value="acid">acid</option>
+          <option value="bludgeon">bludgeon</option>
+          <option value="cold">cold</option>
+          <option value="crush">crush</option>
+          <option value="drain">drain</option>
+          <option value="fire">fire</option>
+          <option value="lightning">lightning</option>
+          <option value="magic">magic</option>
+          <option value="pierce">pierce</option>
+          <option value="poison">poison</option>
+          <option value="slash">slash</option>
+          <option value="undefined">undefined</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 1</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast1percent" id="cast1percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast1spell" id="cast1spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast1target" id="cast1target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 2</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast2percent" id="cast2percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast2spell" id="cast2spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast2target" id="cast2target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 3</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast3percent" id="cast3percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast3spell" id="cast3spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast3target" id="cast3target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 4</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast4percent" id="cast4percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast4spell" id="cast4spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast4target" id="cast4target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 5</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast5percent" id="cast5percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast5spell" id="cast5spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast5target" id="cast5target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 6</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast6percent" id="cast6percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast6spell" id="cast6spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast6target" id="cast6target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 7</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast7percent" id="cast7percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast7spell" id="cast7spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast7target" id="cast7target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 8</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast8percent" id="cast8percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast8spell" id="cast8spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast8target" id="cast8target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 9</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast9percent" id="cast9percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast9spell" id="cast9spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast9target" id="cast9target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Spell 10</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="cast10percent" id="cast10percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % cast 
+        <select name="cast10spell" id="cast10spell">
+          <option value="acid_cyclone">Acid Cyclone</option>
+          <option value="anti_magic_shell">AMS</option>
+          <option value="blindness">Blindness</option>
+          <option value="blink">Blink</option>
+          <option value="burning_hands">Burning Hands</option>
+          <option value="cause_disease">Cause Disease</option>
+          <option value="chill_touch">Chill Touch</option>
+          <option value="colour_spray">Colour Spray</option>
+          <option value="cure_critic">Cure Critical Wounds</option>
+          <option value="cure_light">Cure Light Wounds</option>
+          <option value="cure_serious">Cure Serious Wounds</option>
+          <option value="dispel_evil">Dispel Evil</option>
+          <option value="dispel_good">Dispel Good</option>
+          <option value="drain_magic">Drain Magic</option>
+          <option value="electric_shock">Electric Shock</option>
+          <option value="energy_drain">Energy Drain</option>
+          <option value="expose">Expose</option>
+          <option value="fire_spear">Fire Spear</option>
+          <option value="fireball">Fireball</option>
+          <option value="flamestrike">Flamestrike</option>
+          <option value="fury">Fury</option>
+          <option value="harm">Harm</option>
+          <option value="heal">Heal</option>
+          <option value="iceball">Iceball</option>
+          <option value="jinx">Jinx</option>
+          <option value="lethal_fire">Lethal Fire</option>
+          <option value="lightning_bolt">Lightning Bolt</option>
+          <option value="magic_missile">Magic Missile</option>
+          <option value="miracle">Miracle</option>
+          <option value="mirror_image">Mirror Image</option>
+          <option value="petrify">Petrify</option>
+          <option value="polymorph_pig">Polymorph Pig</option>
+          <option value="power_word_kill">PWK</option>
+          <option value="powerheal">Powerheal</option>
+          <option value="prismatic_beam">Prismatic Beam</option>
+          <option value="ray_of_freezing">Ray of Freezing</option>
+          <option value="shocking_grasp">Shocking Grasp</option>
+          <option value="silence">Silence</option>
+          <option value="spiritual_hammer">Spiritual Hammer</option>
+          <option value="super_harm">Super Harm</option>
+          <option value="thunderball">Thunderball</option>
+          <option value="vampiric_touch">Vampiric Touch</option>
+          <option value="weakness">Weakness</option>
+          <option value="web">Web</option>
+        </select> <select name="cast10target" id="cast10target">
+          <option value="buffer">buffer</option>
+          <option value="group">group</option>
+          <option value="attackers">attackers</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="all_row1">all_row1</option>
+          <option value="all_row2">all_row2</option>
+          <option value="all_row3">all_row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="all_clerics">all_clerics</option>
+          <option value="all_mages">all_mages</option>
+          <option value="all_thiefs">all_thiefs</option>
+          <option value="all_warriors">all_warriors</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+          <option value="room">room</option>
+          <option value="rooms_around">rooms_around</option>
+          <option value="zone">zone</option>
+          <option value="world">world</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Switch</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="switchpercent" id="switchpercent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select> <select name="switchtarget" id="switchtarget">
+          <option value="buffer">buffer</option>
+          <option value="r_group">r_group</option>
+          <option value="r_attackers">r_attackers</option>
+          <option value="row1">row1</option>
+          <option value="row2">row2</option>
+          <option value="row3">row3</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="weakest">weakest</option>
+          <option value="toughest">toughest</option>
+          <option value="r_room">r_room</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Actions</td>
+      <td colspan="2" bgcolor="#6699FF"> <table width="700" border="0" align="left" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="150"> <input name="ISNPC" type="checkbox" value="ISNPC" checked>
+              ISNPC <br> <input type="checkbox" name="ACT_HUNT" value="ACT_HUNT">
+              Hunter<br> <input name="F_AGG" type="checkbox" value="F_AGG">
+              Fast Aggro <br> <input type="checkbox" name="AGGRESSIVE" value="AGGRESSIVE">
+              Aggressive <br> <input name="WIMPY" type="checkbox" value="WIMPY">
+              Wimpy </td>
+            <td width="150"> <input name="CLERIC" type="checkbox" value="CLERIC">
+              Cleric <br> <input name="MAGE" type="checkbox" value="MAGE">
+              Mage <br> <input name="THIEF" type="checkbox" value="THIEF">
+              Thief <br> <input type="checkbox" name="NICE-THIEF" value="NICE-THIEF">
+              Nice Thief <br> <input name="WARRIOR" type="checkbox" value="WARRIOR">
+              Warrior </td>
+            <td width="150"> <input name="MEMORY" type="checkbox" value="MEMORY">
+              Memory <br> <input name="SPEC" type="checkbox" value="SPEC">
+              Spec <br> <input name="SENTINEL" type="checkbox" value="SENTINEL">
+              Sentinel <br> <input name="SCAVENGER" type="checkbox" value="SCAVENGER">
+              Scavenger <br> <input type="checkbox" name="NOCORPSE" value="NOCORPSE">
+              No Corpse <br> </td>
+            <td width="150"> <input name="STAY-TERRAIN" type="checkbox" value="STAY-TERRAIN">
+              Stay-terrain <br> <input name="STAY-ZONE" type="checkbox" value="STAY-ZONE">
+              Stay-zone <br> <input name="SWITCH" type="checkbox" value="SWITCH">
+              Switch <br> <input name="SWIM" type="checkbox" value="SWIM">
+              Swim <br> <input name="HIDE" type="checkbox" value="HIDE">
+              Hide </td>
+            <td valign="top"> <input name="PARRY" type="checkbox" value="PARRY">
+              Parry<br> <input name="MERCY" type="checkbox" value="MERCY">
+              Mercy<br> <input name="ANARCHIST" type="checkbox" value="ANARCHIST">
+              Anarchist </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Affects</td>
+      <td colspan="2" bgcolor="#6699FF"> <table width="700" border="0" align="left" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="150"> <input name="affblind" type="checkbox" value="BLIND">
+              Blind<br> <input type="checkbox" name="affcurse" value="CURSE">
+              Curse<br> <input name="affdetectalign" type="checkbox" value="DETECT-ALIGNMENT">
+              Det. Alignment<br> <input type="checkbox" name="affdetectinv" value="DETECT-INVISIBILITY">
+              Det. Invisibility<br> <input name="affdetectmagic" type="checkbox" value="DETECT-MAGIC">
+              Detect Magic </td>
+            <td width="150"> <input name="affdodge" type="checkbox" value="DODGE">
+              Dodge<br> <input name="afffly" type="checkbox" value="FLY">
+              Fly<br> <input name="afffury" type="checkbox" value="FURY">
+              Fury<br> <input type="checkbox" name="affhide" value="HIDE">
+              Hide<br> <input name="affhold" type="checkbox" value="HOLD">
+              Hold </td>
+            <td width="150"> <input name="affiminv" type="checkbox" value="IMINV">
+              Imp. Invisible<br> <input name="affinvisible" type="checkbox" value="INVISIBLE">
+              Invisible<br> <input name="affinvul" type="checkbox" value="INVUL">
+              Invulnerability<br> <input name="affparalysis" type="checkbox" value="PARALYSIS">
+              Paralysis<br> <input type="checkbox" name="affpoison" value="POISON">
+              Poison </td>
+            <td width="150"> <input name="affpfg" type="checkbox" value="PROTECT-GOOD">
+              PFG<br> <input name="affpfe" type="checkbox" value="PROTECT-EVIL">
+              PFE<br> <input name="affpfn" type="checkbox" value="PROTECT-NEUTRAL">
+              PFN<br> <input name="affsanc" type="checkbox" value="SANCTUARY">
+              Sanctuary<br> <input name="affsenselife" type="checkbox" value="SENSE-LIFE">
+              Sense Life </td>
+            <td valign="top"> <input name="affsleep" type="checkbox" value="SLEEP">
+              Sleep<br> <input name="affsneak" type="checkbox" value="SNEAK">
+              Sneak<br> <input name="afftrue" type="checkbox" value="TRUE">
+              True Sight </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Immunities</td>
+      <td colspan="2" bgcolor="#6699FF"> <table width="700" border="0" align="left" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="150"> <input name="immacid" type="checkbox" value="Acid">
+              Acid <br> <input name="immblindness" type="checkbox" value="Blindness">
+              Blindness <br> <input type="checkbox" name="immbludgeon" value="Bludgeon">
+              Bludgeon <br> <input name="immcharm" type="checkbox" value="Charm">
+              Charm <br> <input name="immcold" type="checkbox" value="Cold">
+              Cold </td>
+            <td width="150"> <input name="immcurse" type="checkbox" value="Curse">
+              Curse <br> <input name="immdrain" type="checkbox" value="Drain">
+              Drain <br> <input name="immfeeblemind" type="checkbox" value="Feeblemind">
+              Feeblemind<br> <input name="immfire" type="checkbox" value="Fire">
+              Fire <br> <input name="immlightning" type="checkbox" value="Lightning">
+              Lightning </td>
+            <td width="150"> <input name="immmagic" type="checkbox" value="Magic">
+              Magic <br> <input name="immparalysis" type="checkbox" value="Paralysis">
+              Paralysis <br> <input type="checkbox" name="immpiercing" value="Piercing">
+              Piercing<br> <input name="immpoison" type="checkbox" value="Poison">
+              Poison <br> <input name="immpwb" type="checkbox" value="Pwb">
+              PWB </td>
+            <td width="150"> <input name="immpwk" type="checkbox" value="Pwk">
+              PWK <br> <input name="immpws" type="checkbox" value="Pws">
+              PWS <br> <input name="immsilence" type="checkbox" value="Silence">
+              Silence<br> <input name="immslash" type="checkbox" value="Slash">
+              Slash <br> <input name="immsleep" type="checkbox" value="Sleep">
+              Sleep </td>
+            <td width="100" valign="top"> <input name="immweb" type="checkbox" value="Web">
+              Web </td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Protections</td>
+      <td colspan="2" bgcolor="#6699FF"> <table width="700" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="150"> <input type="checkbox" name="pfacid" value="acid">
+              Acid<br> <input type="checkbox" name="pflightning" value="lightning">
+              Lightning</td>
+            <td width="150"> <input type="checkbox" name="pfbludgeon" value="bludgeon">
+              Bludgeon<br> <input type="checkbox" name="pfmagic" value="magic">
+              Magic</td>
+            <td width="150"> <input type="checkbox" name="pfcold" value="cold">
+              Cold<br> <input type="checkbox" name="pfpiercing" value="piercing">
+              Piercing</td>
+            <td width="150"> <input type="checkbox" name="pfdrain" value="drain">
+              Drain<br> <input type="checkbox" name="pfpoison" value="poison">
+              Poison</td>
+            <td> <input type="checkbox" name="pffire" value="fire">
+              Fire<br> <input type="checkbox" name="pfslash" value="slash">
+              Slash</td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Friends</td>
+      <td colspan="2" bgcolor="#6699FF"> <input name="friends" type="text" id="friends"></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Enemies</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="enemy1" id="enemy1">
+          <option value="undef" selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="enemy2" id="enemy2">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="enemy3" id="enemy3">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="enemy4" id="enemy4">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="enemy5" id="enemy5">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="enemy6" id="enemy6">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#6699FF">Special Attacks</td>
+      <td bgcolor="#6699FF"> <input name="specvic" type="text" id="specvic" size="40"> 
+        <font size="-1">Line that victim sees</font><br> <input name="specroom" type="text" id="specroom" size="40"> 
+        <font size="-1">Line seen by people in the room</font></td>
+      <td align="left" bgcolor="#6699FF"> <table width="297" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="95"><font size="-1">$e / $E</font></td>
+            <td width="60"><font size="-1">=</font></td>
+            <td width="142"><font size="-1">he /she / it</font></td>
+          </tr>
+          <tr> 
+            <td><font size="-1">$m / $M</font></td>
+            <td><font size="-1">=</font></td>
+            <td><font size="-1">him / her / it</font></td>
+          </tr>
+          <tr> 
+            <td><font size="-1">$s / $S</font></td>
+            <td><font size="-1">=</font></td>
+            <td><font size="-1">his / hers / its</font></td>
+          </tr>
+          <tr> 
+            <td><font size="-1">$n / $N</font></td>
+            <td><font size="-1">=</font></td>
+            <td><font size="-1">name of mob/player</font></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><font size="-1">Note: Capital letter codes will be 
+              replaced with the appropriate word for the victim and lower case 
+              codes will be replaced with the appropriate words for the mob.</font></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#CCCCCC">&nbsp;</td>
+      <td colspan="2" bgcolor="#CCCCCC">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td rowspan="3" bgcolor="#6699FF">Blocking</td>
+      <td colspan="2" bgcolor="#6699FF"> <select name="blockdir" id="blockdir">
+          <option value="north">North</option>
+          <option value="south">South</option>
+          <option value="west">West</option>
+          <option value="east">East</option>
+          <option value="up">Up</option>
+          <option value="down">Down</option>
+        </select> <font size="-1">Direction to block</font></td>
+    </tr>
+    <tr> 
+      <td colspan="2" bgcolor="#6699FF"> <select name="block1" id="block1">
+          <option value="undef" selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="block2" id="block2">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="block3" id="block3">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="block4" id="block4">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="block5" id="block5">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <select name="block6" id="block6">
+          <option value=" " selected> </option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+          <option value="cleric">cleric</option>
+          <option value="mage">mage</option>
+          <option value="thief">thief</option>
+          <option value="warrior">warrior</option>
+          <option value="assassin">assassin</option>
+          <option value="avenger">avenger</option>
+          <option value="bard">bard</option>
+          <option value="conjurer">conjurer</option>
+          <option value="druid">druid</option>
+          <option value="enchanter">enchanter</option>
+          <option value="healer">healer</option>
+          <option value="inquisitor">inquisitor</option>
+          <option value="necromancer">necromancer</option>
+          <option value="paladin">paladin</option>
+          <option value="ranger">ranger</option>
+          <option value="rogue">rogue</option>
+          <option value="dwarf">dwarf</option>
+          <option value="elf">elf</option>
+          <option value="halfling">halfling</option>
+          <option value="human">human</option>
+          <option value="lemyrian">lemyrian</option>
+          <option value="mandrake">mandrake</option>
+          <option value="orc">orc</option>
+          <option value="pixie">pixie</option>
+          <option value="dragon">dragon</option>
+        </select> <font size="-1">Player type to block</font></td>
+    </tr>
+    <tr bgcolor="#6699FF"> 
+      <td colspan="2"> <input name="blockvic" type="text" id="blockvic" size="40"> 
+        <font size="-1">Message shown to player being blocked*</font><br> <input name="blockroom" type="text" id="blockroom" size="40"> 
+        <font size="-1">Message shown to room when player is blocked*</font> <br> 
+        <font size="-1">*Use Special Attack codes for player and mob names.</font></td>
+    </tr>
+    <tr bgcolor="#CCCCCC"> 
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#6699FF"> 
+      <td rowspan="5">Load Items</td>
+      <td colspan="2"><select name="item1command" id="item1command">
+          <option value="wear">Wear</option>
+          <option value="carry">Carry</option>
+          <option value="load">Load</option>
+          <option value="with">With</option>
+        </select> <select name="item1percent" id="item1percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <input name="item1number" type="text" id="item1number"> </td>
+    </tr>
+    <tr bgcolor="#6699FF"> 
+      <td colspan="2"><select name="item2command" id="item2command">
+          <option value="wear">Wear</option>
+          <option value="carry">Carry</option>
+          <option value="load">Load</option>
+          <option value="with">With</option>
+        </select> <select name="item2percent" id="item2percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <input name="item2number" type="text" id="item2number"></td>
+    </tr>
+    <tr bgcolor="#6699FF"> 
+      <td colspan="2"><select name="item3command" id="item3command">
+          <option value="wear">Wear</option>
+          <option value="carry">Carry</option>
+          <option value="load">Load</option>
+          <option value="with">With</option>
+        </select> <select name="item3percent" id="item3percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <input name="item3number" type="text" id="item3number"></td>
+    </tr>
+    <tr bgcolor="#6699FF"> 
+      <td colspan="2"><select name="item4command" id="item4command">
+          <option value="wear">Wear</option>
+          <option value="carry">Carry</option>
+          <option value="load">Load</option>
+          <option value="with">With</option>
+        </select> <select name="item4percent" id="item4percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <input name="item4number" type="text" id="item4number"></td>
+    </tr>
+    <tr bgcolor="#6699FF"> 
+      <td colspan="2"><select name="item5command" id="item5command">
+          <option value="wear">Wear</option>
+          <option value="carry">Carry</option>
+          <option value="load">Load</option>
+          <option value="with">With</option>
+        </select> <select name="item5percent" id="item5percent">
+          <option value="0" selected> </option>
+          <option value="100">100</option>
+          <option value="95">95</option>
+          <option value="90">90</option>
+          <option value="85">85</option>
+          <option value="80">80</option>
+          <option value="75">75</option>
+          <option value="70">70</option>
+          <option value="65">65</option>
+          <option value="60">60</option>
+          <option value="55">55</option>
+          <option value="50">50</option>
+          <option value="45">45</option>
+          <option value="40">40</option>
+          <option value="35">35</option>
+          <option value="30">30</option>
+          <option value="25">25</option>
+          <option value="20">20</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        % 
+        <input name="item5number" type="text" id="item5number"></td>
+    </tr>
+    <tr bgcolor="#CCCCCC"> 
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td colspan="2"><div align="right"><font size="-3">last updated: 08 Feb 
+          03</font></div></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><div align="center">
+          <table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr> 
+              <td width="164"> <input type="submit" name="Submit" value="Make Mob!"></td>
+              <td width="236"><input name="Reset" type="reset" id="Reset" value="Reset Form"></td>
+            </tr>
+          </table>
+          <font size="-3"> </font></div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p><br>
+  </p>
+</form>
+
+</body>
+</html>
